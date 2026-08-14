@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "dsh-narrative-ledger": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./mcp-server.mjs"]
+    }
+  }
+}

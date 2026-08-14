@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "story": { "id": "tower-key", "revision": "git:abc123" },
+  "entities": [
+    { "id": "alice", "type": "character" },
+    { "id": "bob", "type": "character" },
+    { "id": "tower", "type": "location" },
+    { "id": "village", "type": "location" },
+    { "id": "key", "type": "object" }
+  ],
+  "predicates": [
+    { "id": "location", "cardinality": "single", "valueKind": "entity" },
+    { "id": "possesses", "cardinality": "multi", "valueKind": "entity" }
+  ],
+  "sources": [
+    { "id": "canon-a", "path": "canon/shard-a.txt", "sha256": "645efdf89a6eebb885d4ec86751a205b39aad6f52ae6eee6159c57d57b57e215" }
+  ]
+}

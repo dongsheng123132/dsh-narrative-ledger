@@ -1,0 +1,6 @@
+{"eventVersion":1,"idempotencyKey":"e1","seq":1,"eventId":"fact-alice-tower","kind":"assert","factId":"alice-at-tower","subjectId":"alice","predicateId":"location","valueRef":{"entityId":"tower"},"sourceId":"canon-a","witnessIds":["alice"]}
+{"eventVersion":1,"idempotencyKey":"e2","seq":2,"eventId":"fact-key-tower","kind":"assert","factId":"key-at-tower","subjectId":"key","predicateId":"location","valueRef":{"entityId":"tower"},"sourceId":"canon-a","witnessIds":["alice"]}
+{"eventVersion":1,"idempotencyKey":"e3","seq":3,"eventId":"scene-disclosure","kind":"scene","storyTime":10,"locationId":"tower","participantIds":["alice","bob"],"communicatedFactIds":["key-at-tower"]}
+{"eventVersion":1,"idempotencyKey":"e4","seq":4,"eventId":"retract-alice-tower","kind":"retract","factId":"alice-at-tower"}
+{"eventVersion":1,"idempotencyKey":"e5","seq":5,"eventId":"fact-alice-village","kind":"assert","factId":"alice-at-village","subjectId":"alice","predicateId":"location","valueRef":{"entityId":"village"},"sourceId":"canon-a","witnessIds":["alice"]}
+{"eventVersion":1,"idempotencyKey":"e6","seq":6,"eventId":"scene-village","kind":"scene","storyTime":20,"locationId":"village","participantIds":["alice"],"communicatedFactIds":[]}
