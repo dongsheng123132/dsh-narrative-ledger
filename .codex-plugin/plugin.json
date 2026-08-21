@@ -1,6 +1,6 @@
 {
   "name": "dsh-narrative-ledger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Content-addressed timeline, canon and character-knowledge evidence for DSH",
   "author": { "name": "hfshfg" },
   "mcpServers": "./.mcp.json",
@@ -11,6 +11,6 @@
     "developerName": "hfshfg",
     "category": "Developer Tools",
     "capabilities": ["Narrative continuity evidence", "Character knowledge boundaries", "Canon hash verification"],
-    "defaultPrompt": "Verify this narrative ledger and query its structural state without inventing story facts."
+    "defaultPrompt": ["Verify this narrative ledger and query its structural state without inventing story facts."]
   }
 }

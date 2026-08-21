@@ -28,7 +28,9 @@ dsh plugin --profile web add github:dongsheng123132/dsh-narrative-ledger
 
 DSH tools: `dsh_narrative_ledger_inspect`, `dsh_narrative_ledger_verify`, `dsh_narrative_ledger_query`.
 
-The Codex plugin also exposes a stdio MCP server with the equivalent `narrative_ledger_*` tools through `.mcp.json`.
+The Codex plugin also exposes a proof-only stdio MCP server through `.mcp.json`: `narrative_ledger_inspect_inline`, `narrative_ledger_verify_inline`, and `narrative_ledger_query_inline`. MCP accepts bounded inline manifest/event strings only, never paths, and performs no filesystem, network, process, or artifact writes. Because canon source bytes are not supplied, inline verification reports `verified-structure` plus `sourceBytesVerified: false`; only DSH/CLI filesystem verification may report the canon sources as fully verified.
+
+Version 0.2.0 uses a host-neutral namespace entry with no private DSH runtime dependency or default export, so the stock Cordis Web loader can compose it safely. DSH and CLI remain the explicit filesystem surfaces; their content-addressed artifact response includes byte length and successful read-back verification.
 
 ## CLI
 
@@ -44,7 +46,9 @@ See [`examples/basic`](examples/basic): Bob does not know the key-location fact 
 ```sh
 npm test
 npm run check
+npm run smoke:plugin
 npm run smoke:mcp
+DSH_CHECKOUT=/path/to/DeepSeek-Harness npm run smoke:dsh
 ```
 
 MIT

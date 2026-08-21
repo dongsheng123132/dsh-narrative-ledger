@@ -1,0 +1,7 @@
+node_modules/
+artifacts/
+*artifacts/
+examples/**/artifacts/
+examples/**/*artifacts/
+examples/basic/artifacts/
+examples/basic/github-smoke-artifacts/
