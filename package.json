@@ -1,16 +1,69 @@
 {
   "name": "dsh-narrative-ledger",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Content-addressed timeline, canon and character-knowledge evidence for DeepSeek Harness",
   "license": "MIT",
   "type": "module",
   "main": "./index.js",
-  "exports": { ".": "./index.js", "./ledger": "./lib/narrative-ledger.mjs" },
-  "bin": { "dsh-narrative-ledger": "./bin/dsh-narrative-ledger.mjs" },
-  "files": [".codex-plugin/", ".mcp.json", "bin/", "cordis.patch.yml", "examples/basic/narrative.manifest.json", "examples/basic/events.jsonl", "examples/basic/canon/shard-a.txt", "index.js", "lib/", "mcp-server.mjs", "LICENSE", "README.md", "README.zh-CN.md", "SECURITY.md"],
-  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
-  "scripts": { "test": "node --test test/*.test.mjs", "check": "node scripts/check.mjs", "smoke:plugin": "node test/plugin-smoke.mjs", "smoke:mcp": "node test/mcp-smoke.mjs", "smoke:dsh": "node test/dsh-runtime-smoke.mjs", "smoke:stock-web": "node test/stock-web-loader-smoke.mjs" },
-  "engines": { "node": ">=22" },
-  "repository": { "type": "git", "url": "git+https://github.com/dongsheng123132/dsh-narrative-ledger.git" },
-  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "narrative", "story-state", "continuity", "canon"]
+  "exports": {
+    ".": "./index.js",
+    "./ledger": "./lib/narrative-ledger.mjs"
+  },
+  "bin": {
+    "dsh-narrative-ledger": "./bin/dsh-narrative-ledger.mjs"
+  },
+  "files": [
+    ".codex-plugin/",
+    ".mcp.json",
+    "bin/",
+    "cordis.patch.yml",
+    "examples/basic/narrative.manifest.json",
+    "examples/basic/events.jsonl",
+    "examples/basic/canon/shard-a.txt",
+    "index.js",
+    "lib/",
+    "mcp-server.mjs",
+    "LICENSE",
+    "README.md",
+    "README.zh-CN.md",
+    "SECURITY.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.1.2-alpha.4",
+      "node": ">=22",
+      "dshReleases": {
+        "0.1.2-alpha.4": "compatible",
+        "0.1.2-alpha.5": "compatible",
+        "0.1.2-rc.1": "compatible"
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "smoke:plugin": "node test/plugin-smoke.mjs",
+    "smoke:mcp": "node test/mcp-smoke.mjs",
+    "smoke:dsh": "node test/dsh-runtime-smoke.mjs",
+    "smoke:stock-web": "node test/stock-web-loader-smoke.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongsheng123132/dsh-narrative-ledger.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "narrative",
+    "story-state",
+    "continuity",
+    "canon"
+  ]
 }

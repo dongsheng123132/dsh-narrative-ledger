@@ -1,8 +1,10 @@
 {
   "name": "dsh-narrative-ledger",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Content-addressed timeline, canon and character-knowledge evidence for DSH",
-  "author": { "name": "hfshfg" },
+  "author": {
+    "name": "hfshfg"
+  },
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "DSH Narrative Ledger",
@@ -10,7 +12,13 @@
     "longDescription": "Checks content-addressed canon sources, ordered scene events, explicit fact assertion/retraction, single-value contradictions and what each character can know at a given point without storing story prose.",
     "developerName": "hfshfg",
     "category": "Developer Tools",
-    "capabilities": ["Narrative continuity evidence", "Character knowledge boundaries", "Canon hash verification"],
-    "defaultPrompt": ["Verify this narrative ledger and query its structural state without inventing story facts."]
+    "capabilities": [
+      "Narrative continuity evidence",
+      "Character knowledge boundaries",
+      "Canon hash verification"
+    ],
+    "defaultPrompt": [
+      "Verify this narrative ledger and query its structural state without inventing story facts."
+    ]
   }
 }
